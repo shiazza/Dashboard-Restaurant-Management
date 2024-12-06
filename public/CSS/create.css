@@ -1,0 +1,189 @@
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #4B5563;
+}
+
+.back-link:hover {
+    color: #1F2937;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    appearance: none;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    color: #374151;
+    line-height: 1.25;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+.submit-button {
+    background-color: #007aff;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: auto;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-form {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-select-wrapper {
+    flex: 1;
+}
+
+.quantity-wrapper {
+    width: 8rem;
+}
+
+.add-menu-button {
+    color: #007aff;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.add-menu-button:hover {
+    color: #0056b3;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.cancel-link {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.cancel-link:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 640px) {
+    .menu-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .quantity-wrapper {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .submit-button,
+    .cancel-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.menu-action-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 1rem;
+}
+
+.delete-menu-button {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-menu-button img{
+    width: 16px;
+    transform: translateY(3px);
+}
+
+.delete-menu-button:hover {
+    background-color: #d9534f;
+}

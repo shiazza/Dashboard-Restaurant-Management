@@ -1,0 +1,146 @@
+.navbar {
+    background-color: white;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+
+.nav-item {
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: block;
+}
+
+
+.nav-link {
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: 0.3s ease;
+}
+
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+
+.nav-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.navbar-brand {
+    margin: 3rem 0rem 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #111827;
+    text-decoration: none;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+.toggler-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #111827;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content {
+    margin: 4rem 0rem 0rem 15.6rem;
+    padding: 0 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-collapse.active {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem;
+    }
+}
+
+
+.nav-link.active {
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-collapse.active {
+    animation: slideDown 0.3s ease-out;
+}
+

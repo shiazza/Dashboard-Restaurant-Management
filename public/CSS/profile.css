@@ -1,0 +1,81 @@
+.profile-container {
+    position: relative;
+}
+
+.profile-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(230%, -55%);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 6px rgba(0, 0, 0, 0.08);
+    padding: 0px 20px 20px 20px;
+    border-radius: 12px;
+    z-index: 1000;
+    width: 240px;
+    backdrop-filter: blur(10px);
+}
+
+.profile-popup .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.profile-popup .profile-header h2 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.profile-popup .profile-body {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.profile-popup .profile-edit-link {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #007aff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-popup .profile-edit-link:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    transform: translateY(33px);
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007aff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-btn:hover {
+    color: #0051cc;
+}

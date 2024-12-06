@@ -1,0 +1,11 @@
+
+.order-card {
+    background-color: white;
+    border:#d5d5d5 1px solid; 
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.order-info {
+    margin-bottom: 1.5rem;
+}

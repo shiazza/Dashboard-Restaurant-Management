@@ -1,0 +1,75 @@
+.table-wrapper {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: #d5d5d5 1px solid;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background-color: #f3f4f6;
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-weight: 500;
+    color: #374151;
+}
+
+.data-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.order-table {
+    width: 100%;
+    border: #d5d5d5 1px solid;
+    border-collapse: collapse;
+}
+
+.table-header {
+    background-color: #F3F4F6;
+}
+
+.table-header th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+}
+
+.table-header th:nth-child(n+2) {
+    text-align: right;
+}
+
+.table-body td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.table-body td:nth-child(n+2) {
+    text-align: right;
+}
+
+.table-footer {
+    background-color: #F9FAFB;
+}
+
+.table-footer td {
+    padding: 1rem 1.5rem;
+}
+
+.total-label {
+    text-align: right;
+    font-weight: 700;
+}
+
+.total-amount {
+    text-align: right;
+    font-weight: 700;
+}
